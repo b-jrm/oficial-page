@@ -2,12 +2,52 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.use(express.static(__dirname+"/public")); // Carpeta estatica public
+// Template Engine
+app.set('view engine','ejs');
+app.set('views',__dirname+'/views');
+
+// Static Folder
+app.use(express.static(__dirname+"/public"));
 
 // Routers
-app.get('/profile',(req,res) => { res.send(`This page profile with express ...`) })
+app.get(
+    '/',
+    (req,res) => {
+        res.render(
+            'index',
+            {
+                tabName: 'Inicio',
+                title: 'Page index'
+            }
+        )
+    }
+)
+app.get(
+    '/profile',
+    (req,res) => {
+        res.render(
+            'profile',
+            {
+                tabName: 'Perfil',
+                title: 'Page profile'
+            }
+        )
+    }
+)
 
-app.use((req,res) => { res.status(404).sendFile(__dirname+"/public/404.html") })
+// Not Found
+app.use(
+    (req,res) => { 
+        res.status(404)
+        res.render(
+            '404',
+            {
+                tabName: 'Not Found',
+                title: 'Page Not Found'
+            }
+        )
+    }
+)
 
 // Listener
 app.listen(port,() => { console.log(`Listener requests with port ${port} ...`) })
