@@ -7,5 +7,26 @@
     <title><%= tabName %></title>
 
     <link rel="stylesheet" href="./css/materialize.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/design.css"/>
 </head>
-<body>
+<body class="blue-grey darken-1">
+    <div class="progress white-text">
+        <div class="indeterminate"></div>
+    </div>
+    <div class="b-container-preload">
+        <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-gray-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                    <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid blue-grey lighten-5" style="display: none;">
+        <%- include('sidebar') %>

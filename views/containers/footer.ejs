@@ -1,4 +1,15 @@
+</div>
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/materialize.min.js"></script>
+<script>
+    $(() => {
+        $(".progress").fadeOut();
+        $(".b-container-preload").fadeOut();
+        setTimeout(() => {
+            $(".container-fluid").fadeIn();
+        },300);
+        $('.sidenav').sidenav();
+    });
+</script>
 </body>
 </html>
