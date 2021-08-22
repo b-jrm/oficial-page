@@ -27,6 +27,8 @@ git config --global alias.agregarApp "add app.js"       // Crear el alias agrega
 git config -e                                           // Ver el archivo de configuracion y los alias existentes (Se abre editor VIM)
 git config --global -l                                  // Ver configuracion sin modo de edición (Sin editor VIM)
 
-
+git remote add origin url                               // Subir repositorio a pagina github
+git push -u origin master                               // Confirmar subida de repositorio
+git remote set-url origin url                           // Subir proyecto a repositorio existente y con push anteriores
 
 */
