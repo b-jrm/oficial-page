@@ -1,2 +1,4 @@
 # Ignorar el readme.js
 readme.js
+# Ignorar paquetes
+node_modules/
