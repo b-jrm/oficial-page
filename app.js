@@ -1,16 +1,11 @@
-const {frutas,dinero} = require('./frutas');
+const http = require('http');
 
-const cowsay = require('cowsay');
-
-frutas.forEach(item => {
-    console.log(item); // Imprimir en consola
+const server = http.createServer((req, res) => {
+    res.end(`Response with port ${port} ...`);
 });
 
-console.log(dinero);
+const port = 3000;
 
-console.log(cowsay.say({
-    text: 'Hola Julian, Curso NodeJS',
-    e: 'Oo',
-    T: 'U'
-}));
-
+server.listen(port,() => {
+    console.log(`Listener requests with port ${port} ...`);
+});
