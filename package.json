@@ -4,7 +4,8 @@
   "description": "// GIT BASH:\r /*\r git --version => git version 2.28.0.windows.1\r git init                                                // Initialized empty Git repository in {ruta local}/.git/\r git status                                              // Estado actual de modificaciones\r git add app.js                                          // Agregar archivo (. para agregar todos los archivos)\r git commit -m \"Save version  0001\"                      // Commit de cambios con un mensaje\r git commit -am \"Mensaje\"                                // Combinacion de commit y add . de una sola vez\r git commit --amend                                      // Editar commit\r git reset --mixed codigo_commit                         // Viajar al commit especifico por el codigo\r git reset --hard codigo_commit                          // Viajar al commit especifico por el codigo y eliminar cambios futuros a este\r git reset --hard codigo_commit                          // Igual al anterior, tambien sirve para restaurar a un HEAD de commit\r git reset --hard                                        // Destruir todos los cambios sin haber hecho commit\r git checkout -- archivoconextension                     // Deshacer los cambios de un archivo hasta su ultimo commit \r git mv namenoldfile.ext namenewfile.ext                 // Renombrar archivo y registrar la accion\r git rm namenfile.ext                                    // Eliminar archivo\r git reflog                                              // Muestra todos los cambios incluso de los commit eliminados",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
   },
   "keywords": [],
   "author": "",
