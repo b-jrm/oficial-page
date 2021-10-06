@@ -29,7 +29,23 @@ app.get(
             'profile',
             {
                 tabName: 'Perfil',
-                title: 'Page profile'
+                title: 'perf',
+                CV: {
+                    informationGeneral: {
+                        nameComplete: 'BRAYAN JULIAN RODRIGUEZ MORENO',
+                        firstname: 'BRAYAN JULIAN',
+                        lastname: 'RODRIGUEZ MORENO',
+                        fieldProfession: 'Sistemas',
+                        profession: 'Desarrollador Web',
+                        address: 'Calle 55 # 95B - 67 Sur',
+                        city: 'Bogotá D.C',
+                        department: 'Cundinamarca',
+                        yearsOld: '28',
+                        phone: '7472441',
+                        movil: '3028626889',
+                        email: 'brayanjulianrodriguezmoreno23@gmail.com'
+                    }
+                }
             }
         )
     }

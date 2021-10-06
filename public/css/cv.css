@@ -1,0 +1,105 @@
+/*
+|-----------------------------------------------------
+|   Container CV
+|-----------------------------------------------------
+*/
+
+#container-cv{
+    min-height: 100vh;
+    background-color: rgb(234, 245, 245);
+}
+
+#container-cv h6{
+    color: white;
+}
+
+#container-cv h4{
+    margin: 0px 20px;
+}
+
+#container-cv p{
+    font-size: 1vw;
+    color: rgba(91,155,213,1);
+}
+
+#container-cv .point{
+    color: #26a69a;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline;
+}
+
+/*
+|-----------------------------------------------------
+|   Section Fisrt
+|-----------------------------------------------------
+*/
+
+.cv-section-first{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.cv-section-first > .bow{
+    width: 120%;
+    height: 220px;
+    background-color: rgba(91,155,213,1);
+    border-radius: 0px 0px 50% 50%;
+    -moz-border-radius: 0px 0px 50% 50%;
+    -webkit-border-radius: 0px 0px 50% 50%;
+    border: 11px solid white;
+    border-top: none;
+    -webkit-box-shadow: 0px 0px 0px 11px rgba(91,155,213,1);
+    -moz-box-shadow: 0px 0px 0px 11px rgba(91,155,213,1);
+    box-shadow: 0px 0px 0px 11px rgba(91,155,213,1);
+}
+
+.cv-section-first > .photo{
+    width: 200px;
+    height: 200px;
+    /* border: 7px solid rgb(57, 56, 131); */
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+/*
+|-----------------------------------------------------
+|   Section Fisrt
+|-----------------------------------------------------
+*/
+.cv-section-second{
+    margin-top: 70px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-section-second .line-address{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-width: 70%;
+    height: 35px;
+    background-color: rgba(91,155,213,1);
+    text-align: center;
+    clip-path: polygon(5% 0, 0 47%, 5% 100%, 95% 100%, 100% 50%, 95% 0);
+}
+
+.cv-section-three{
+    text-align: center;
+}

@@ -1,7 +1,30 @@
 <%- include('containers/header') %>
 
-<div>
-    <h1><%= title %></h1>
+<div id="container-cv">
+    <div class="cv-section-first">
+        <div class="bow"></div>
+        <img class="photo responsive-img" src="img/photo-cv.jpg">
+    </div>
+    <div class="cv-section-second">
+        <h4><%= CV.informationGeneral.nameComplete  %></h4>
+        
+        <h5>
+            <i class="tiny material-icons point">panorama_fish_eye</i>
+            <%= CV.informationGeneral.profession  %> / <%= CV.informationGeneral.fieldProfession  %>
+            <i class="tiny material-icons point">panorama_fish_eye</i>
+        </h5>
+        <div class="line-address">
+            <h6><%= CV.informationGeneral.address+', '+CV.informationGeneral.city+' '+CV.informationGeneral.department  %></h6>
+        </div>
+    </div>
+    <div class="cv-section-three">
+        <p>
+            <b>Edad: </b><%= CV.informationGeneral.yearsOld  %>
+            <b>Fijo / Movil: </b><%= CV.informationGeneral.phone+' / '+CV.informationGeneral.movil  %>
+            <b>Correo: </b><%= CV.informationGeneral.email  %>
+        </p>
+    </div>
+    <!-- <h1><%= title %></h1> -->
 </div>
 
 <%- include('containers/footer') %>
